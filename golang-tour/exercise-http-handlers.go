@@ -8,6 +8,8 @@ import (
 
 type String string
 
+type Index string
+
 type Struct struct {
 	Greeting string
 	Punct string
@@ -25,5 +27,5 @@ func main() {
 	http.Handle("/string", String("I'm a frayed knot."))
 	http.Handle("/struct", &Struct{"Hello", ":", "Gophers!"})
 
-	log.Fatal(http.ListenAndServe("localhost:4000", nil))
+	log.Fatal(http.ListenAndServe("localhost:4000", String("Try /string or /struct")))
 }
