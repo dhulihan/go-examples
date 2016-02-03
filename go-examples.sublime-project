@@ -4,5 +4,8 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme"
+	}
 }
